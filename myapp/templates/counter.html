@@ -29,12 +29,12 @@
     <div class="container counter text-center" style="margin-top: 150px;">
 
         <h1 class="display-1 text-white">
-            {% if request.session.count%}
-            {{request.session.count}}
+            {% if request.session.count %}
+                {{request.session.count}}
 
-            {%else%}
-            0
-            {%endif%}</h1> <br> <br>
+            {% else %}
+                0
+            {% endif %}</h1> <br> <br>
 
 
         <form method="POST"> {% csrf_token %}
